@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Welcome to Samsung Products</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        ul {
+            list-style: none;
+            font-size: 18px;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="{{ url_for('static', filename='samsung_banner.png') }}" alt="Samsung Banner">
+        
+        <h1>Welcome to Samsung Products</h1>
+        <ul>
+            <li><a href="/products">View All Products</a></li>
+            <li><a href="/brochure">Download Product Brochure (PDF)</a></li>
+            <li>View Enhanced Images: Go to <a href="/products">Products page</a> and click images</li>
+        </ul>
+    </div>
+</body>
+</html>
